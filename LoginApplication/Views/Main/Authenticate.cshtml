@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Authenticate</title>
+</head>
+<body>
+    <div>
+        Input the security code received by email within the next 60 seconds
+        @using (Html.BeginForm("Welcome", "Main"))
+        {
+            <div>
+                Username:
+                @Html.TextBox("username")
+            </div>
+            <div>
+                Code:
+                @Html.TextBox("code")
+            </div>
+            <input type="submit" value="Authenticate" />
+        }
+    </div>
+</body>
+</html>
+
+
